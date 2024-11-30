@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TCG Collector</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Header with Navigation -->
+		<header>
+			<div class="logo">TCG Collector</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#card-database">Card Database</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#decks">Decks</a></li>
+					<li><a href="#collections">Collections</a></li>
+					<li><a href="#forums">Forums</a></li>
+					<li><a href="#chat-rooms">Chat Rooms</a></li>
+					<li><a href="#battle-zones">Battle Zones</a></li>
+				</ul>
+			</nav>
+			<div class="auth-buttons">
+				<button id="login-btn">Login</button>
+				<button id="signup-btn">Sign Up</button>
+			</div>
+		</header>
+
+		<!-- Main Content Sections -->
+		<main>
+			<!-- Login Modal -->
+			<div id="login-modal" class="modal">
+				<div class="modal-content">
+					<span class="close" id="close-login">&times;</span>
+					<h2>Login</h2>
+					<form id="login-form">
+						<label for="login-username">Username:</label>
+						<input
+							type="text"
+							id="login-username"
+							placeholder="Enter your username"
+							required
+						/>
+						<label for="login-password">Password:</label>
+						<input
+							type="password"
+							id="login-password"
+							placeholder="Enter your password"
+							required
+						/>
+						<button type="submit" class="modal-btn">Login</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Sign Up Modal -->
+			<div id="signup-modal" class="modal">
+				<div class="modal-content">
+					<span class="close" id="close-signup">&times;</span>
+					<h2>Sign Up</h2>
+					<form id="signup-form">
+						<label for="signup-username">Username:</label>
+						<input
+							type="text"
+							id="signup-username"
+							placeholder="Create a username"
+							required
+						/>
+						<label for="signup-password">Password:</label>
+						<input
+							type="password"
+							id="signup-password"
+							placeholder="Create a password"
+							required
+						/>
+						<button type="submit" class="modal-btn">Sign Up</button>
+					</form>
+				</div>
+			</div>
+			<section id="home">
+				<h1>Welcome to TCG Collector</h1>
+				<div class="cards">
+					<div class="card">TCG 1</div>
+					<div class="card">TCG 2</div>
+					<div class="card">TCG 3</div>
+					<div class="card">TCG 4</div>
+				</div>
+				<div class="columns">
+					<div class="column">
+						<h2>Most Popular Decks Today</h2>
+						<p>Deck 1</p>
+						<p>Deck 2</p>
+					</div>
+					<div class="column">
+						<h2>Latest News in General</h2>
+						<p>News 1</p>
+						<p>News 2</p>
+					</div>
+					<div class="column">
+						<h2>Latest Cards to Come Out</h2>
+						<p>Card 1</p>
+						<p>Card 2</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="card-database">
+				<h1>Card Database</h1>
+				<div class="filters">
+					<p>List of Filters</p>
+				</div>
+				<div class="card-display">
+					<div class="card">Card 1</div>
+					<div class="card">Card 2</div>
+				</div>
+			</section>
+
+			<section id="news">
+				<h1>News</h1>
+				<div class="news-container">
+					<div class="news-item">News Article 1</div>
+					<div class="news-item">News Article 2</div>
+				</div>
+			</section>
+
+			<section id="decks">
+				<h1>Decks</h1>
+				<div class="deck-container">
+					<div class="deck">Deck Name 1</div>
+					<div class="deck">Deck Name 2</div>
+				</div>
+			</section>
+
+			<section id="collections">
+				<h1>Collections</h1>
+				<div class="collection-container">
+					<div class="collection">Collection Name 1</div>
+					<div class="collection">Collection Name 2</div>
+				</div>
+			</section>
+
+			<section id="forums">
+				<h1>Forums</h1>
+				<div class="forum-container">
+					<div class="forum">Discussion Forum 1</div>
+					<div class="forum">Discussion Forum 2</div>
+				</div>
+			</section>
+
+			<section id="chat-rooms">
+				<h1>Chat Rooms</h1>
+				<div class="chat-container">
+					<div class="chat-room">Chat Room 1 (5 people)</div>
+					<div class="chat-room">Chat Room 2 (2 people)</div>
+				</div>
+			</section>
+
+			<section id="battle-zones">
+				<h1>Battle Zones</h1>
+				<div class="battle-container">
+					<p>Coming Soon!</p>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<p>TCG Collector © 2024</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
